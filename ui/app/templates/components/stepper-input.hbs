@@ -12,7 +12,7 @@
 <button
   data-test-stepper-decrement
   role="button"
-  class="stepper-input-stepper button {{class}}"
+  class="stepper-input-stepper button {{this.class}}"
   disabled={{or this.disabled (lte this.internalValue this.min)}}
   onclick={{action "decrement"}}
   type="button">
@@ -21,7 +21,7 @@
 <button
   data-test-stepper-increment
   role="button"
-  class="stepper-input-stepper button {{class}}"
+  class="stepper-input-stepper button {{this.class}}"
   disabled={{or this.disabled (gte this.internalValue this.max)}}
   onclick={{action "increment"}}
   type="button">
